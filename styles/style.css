@@ -6,3 +6,177 @@ Green: #00B172
 White: #FFF
 
 */
+
+* {
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: Roboto;
+    color: 1A1A1A;
+}
+
+nav {
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+}
+
+.spotify-logo {
+    height: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav li {
+    padding: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black
+}
+
+header {
+    margin-top: 4rem;
+    width: 100%;
+    height: 30rem;
+    background-image: url("/images/landing.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: #FFF;
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+header p {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 200;
+    width: 23rem;
+    text-align: center;
+}
+
+#whats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 10rem;
+    margin: 3rem 2rem;
+}
+
+#whats h3 {
+    font-size: larger;
+    font-weight: 500;
+    letter-spacing: 0.03rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1.8px solid #00B172;
+    margin-bottom: 1rem;
+}
+
+#whats > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#whats > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+}
+
+#whats img {
+    height: 3rem;
+}
+
+#whats h5 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+    color: #00B172;
+}
+
+#whats p {
+    height: 0.2rem;
+    text-align: center;
+}
+
+#example {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #00B172;
+    height: 35rem;
+    margin: 6rem 2rem 2em 2em;
+    padding: 1em 0em 1em 2em;
+    position: relative;
+}
+
+#example > img {
+    height: 5rem;
+    position: absolute,
+}
+
+#example > div > img {
+    height: 30rem;
+    margin: 2rem;
+}
+
+#example > div  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1em;
+}
+
+#example h3 {
+    color: white;
+    font-size: larger;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 2.5px solid white;
+    margin-bottom: 2.5rem;
+}
+
+#example h5 {
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#example p {
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 200;
+    width: 15rem;
+}
