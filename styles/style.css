@@ -21,14 +21,14 @@ nav {
     width: 100%;
     height: 4rem;
     position: fixed;
+    top: 0;
     background-color: white;
     display: flex;
-    top: 0;
-    left: 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-size: small;
+    padding: 0 1rem;
 }
 
 .spotify-logo {
@@ -40,6 +40,7 @@ nav ul {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
+    padding-right: 3rem;
 }
 
 nav li {
@@ -65,6 +66,7 @@ header {
     align-items: center;
 }
 
+
 header h1 {
     color: #FFF;
     font-size: 2.7rem;
@@ -85,8 +87,9 @@ header p {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 10rem;
-    margin: 3rem 2rem;
+    height: auto;
+    margin: 2rem 1rem;
+    width: 100;
 }
 
 #whats h3 {
@@ -94,14 +97,15 @@ header p {
     font-weight: 500;
     letter-spacing: 0.03rem;
     padding-bottom: 0.2rem;
-    border-bottom: 1.8px solid #00B172;
-    margin-bottom: 1rem;
+    border-bottom: 2.5px solid #00B172;
+    margin-bottom: 1rem;;
 }
 
 #whats > div {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 50rem;
 }
 
 #whats > div > div {
@@ -124,7 +128,7 @@ header p {
 }
 
 #whats p {
-    height: 0.2rem;
+    height: auto;
     text-align: center;
 }
 
@@ -135,19 +139,20 @@ header p {
     justify-content: space-around;
     background-color: #00B172;
     height: 35rem;
-    margin: 6rem 2rem 2em 2em;
     padding: 1em 0em 1em 2em;
     position: relative;
 }
 
 #example > img {
     height: 5rem;
-    position: absolute,
+    position: absolute;
+    top:46%;
+    left: 46%;
 }
 
 #example > div > img {
     height: 30rem;
-    margin: 2rem;
+    margin: 2rem 0rem 2rem 2rem;
 }
 
 #example > div  {
@@ -179,4 +184,162 @@ header p {
     margin-bottom: 1rem;
     font-weight: 200;
     width: 15rem;
+}
+
+@media only screen and (max-width:768px) {
+
+    nav {
+        width: 100%;
+        height: 2rem;
+        position: fixed;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: small;
+    }
+    
+    .spotify-logo {
+        height: 1rem;
+    }
+    
+    nav ul {
+        display: none;
+    }
+
+    header {
+        margin-top: 2rem;
+        width: 100%;
+        height: 20rem;
+        background-image: url("/images/landing.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1em;
+    }
+
+    header p {
+        color: #FFF;
+        font-size: 1rem;
+        font-weight: 200;
+        width: 15rem;
+        text-align: center;
+    }
+
+    #whats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+        margin: 1.5rem 0 0rem 0;
+    }
+    
+    #whats h3 {
+        font-size: smaller;
+        font-weight: 500;
+        letter-spacing: 0.03rem;
+        padding-bottom: 0.2rem;
+        border-bottom: 2.5px solid #00B172;
+        margin-bottom: 0.5rem;;
+    }
+    
+    #whats > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 10rem;
+        height: auto;
+    }
+    
+    #whats > div > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0.5rem;
+        height: auto;
+    }
+    
+    #whats img {
+        height: 2rem;
+    }
+    
+    #whats h5 {
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 0.3rem;
+        color: #00B172;
+        height: auto;
+    }
+    
+    #whats p {
+        font-size: 0.8rem;
+        text-align: center;
+        height: auto;
+    }
+    
+    #example {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #00B172;
+        height: auto;
+        padding: 0.5em 0em 0.5em 0em; 
+        width: 100%;
+    }
+    
+    #example > img {
+        display: none;
+    }
+    
+    #example > div > img {
+        height: 15rem;
+        margin: 2rem 2rem 2rem 2rem;
+    }
+    
+    #example > div  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5em;
+    }
+    
+    #example h3 {
+        color: white;
+        font-size: smaller;
+        font-weight: 400;
+        letter-spacing: 0.03rem;
+        padding-bottom: 0.2rem;
+        border-bottom: 2.5px solid white;
+        margin: 2rem 0 2rem 0;
+    }
+    
+    #example h5 {
+        color: white;
+        font-size: smaller;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+    
+    #example p {
+        color: white;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+        font-weight: 200;
+        text-align: center;
+        width: 8rem;
+    }
 }
